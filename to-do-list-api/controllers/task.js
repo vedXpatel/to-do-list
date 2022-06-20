@@ -19,4 +19,14 @@ const addTask = (req,res) => {
     }
 }
 
-module.exports = addTask;
+const fetchTask = (req,res) => {
+    Task.find({},function(err,tasks){
+        var taskMap = {};
+        tasks.forEach(function(task){
+            taskMap[task._id] = task;
+        });
+        res.json(taskMap);
+    })
+}
+
+module.exports = {addTask,fetchTask};
