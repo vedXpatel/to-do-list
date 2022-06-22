@@ -17,15 +17,7 @@ function Task() {
   }
   return (
     <>
-        <div class="card card--accent">
-          <h2>Add New Task</h2>
-          <label class="input">
-            <input class="input__field" value={task} type="text" placeholder=" " onChange={handleChange}/>
-          </label>
-          <div class="button-group">
-            <button className="sendButton" onClick={submitTask}>Add Task</button>
-          </div>
-        </div>
+        <h1>this is a trial branch</h1>
       {/* <input type="text" className="taskInput" name="task" value={task} onChange={handleChange} />
             <button className="btn" onClick={submitTask}>Add Task</button> */}
     </>
