@@ -1,7 +1,15 @@
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+*{
+  font-family: Poppins;
+}
 
+.alert{
+  top: -20vh;
+  width: 301px;
+  left: 50vw;
+}
 
 :root {
   --color-light: white;
@@ -58,6 +66,10 @@ mark {
   *:first-child {
     margin-top: 0;
   }
+
+  position: relative;
+  top: 30vh;
+  left: 25vw;
 }
 
 
@@ -120,12 +132,13 @@ button {
   font-family: "Poppins";
 }
 
-button:hover{
+.button-group button:hover{
   background:rgb(0, 0, 0);
   transition: background .5s ease;
   color: #fab700;
   
 }
+
 
 button + button {
   margin-left: calc(var(--size-bezel) * 2);
