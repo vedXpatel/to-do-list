@@ -20,7 +20,6 @@ function Task() {
   }
   return (
     <>
-
       <a href="/" style={{color:"black",position:"relative",top:"7vh",left:"10vw"}}>
         <h4>Go Back To All Tasks</h4>
       </a>

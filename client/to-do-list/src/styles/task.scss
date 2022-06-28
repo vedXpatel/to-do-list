@@ -8,7 +8,7 @@
 .alert{
   top: -20vh;
   width: 301px;
-  left: 50vw;
+  left: 40vw;
 }
 
 :root {
@@ -170,3 +170,16 @@ body{
 }
 
 
+// all tasks page
+
+.taskContainer{
+  position: relative;
+  left: 30vw;
+  height: 10vh;
+}
+
+.taskContainer label{
+  font-size: 5vh;
+}
+
+// all tasks page
