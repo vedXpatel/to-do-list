@@ -1,3 +1,8 @@
+// #2C3639
+// #3F4E4F
+// #A27B5C
+// #DCD7C9
+
 @import url('https://rsms.me/inter/inter.css');
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -13,8 +18,8 @@
 
 :root {
   --color-light: white;
-  --color-dark: #212121;
-  --color-signal: #fab700;
+  --color-dark: #874356;
+  --color-signal: #F68989;
   
   --color-background: var(--color-light);
   --color-text: var(--color-dark);
@@ -68,8 +73,8 @@ mark {
   }
 
   position: relative;
-  top: 30vh;
-  left: 25vw;
+  top: 25vh;
+  left: 30vw;
 }
 
 
@@ -101,12 +106,14 @@ mark {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border: 3px solid currentColor;
+    border: none;
+    outline: none;
+    border-bottom: 3px solid currentColor;
     padding: calc(var(--size-bezel) * 1.5) var(--size-bezel);
     color: currentColor;
     background: transparent;
-    border-radius: var(--size-radius);
-    
+    // border-radius: var(--size-radius);
+  
     &:focus,
     &:not(:placeholder-shown) {
       & + .input__label {
@@ -133,9 +140,9 @@ button {
 }
 
 .button-group button:hover{
-  background:rgb(0, 0, 0);
+  background:#874356;
   transition: background .5s ease;
-  color: #fab700;
+  color: #F68989;
   
 }
 
@@ -156,17 +163,23 @@ button + button {
 
 input{
   font-family: 'Poppins';
-  font-size: 28px;
+  font-size: 23px;
+  font-weight: bold;
 }
 
 html{
   padding: 0px;
+  background: #F6E7D8;
 }
 
 body{
   height: 1080px;
   width: 1920px;
   margin: 0px;
+  position: absolute;
+  top: 0px;
+  overflow-x: hidden;
+  background: #F6E7D8;
 }
 
 
@@ -179,7 +192,23 @@ body{
 }
 
 .taskContainer label{
-  font-size: 5vh;
+  font-size: 3vh;
+  color: #411f29;
+}
+
+.individualTaskContainer{
+  position: relative;
+  left: 0vw;
+  top: 10vh;
+  padding: 1vh;
+  padding-left: 2vw;
+}
+
+.form-check-input{
+  top: 1vh;
+  position: relative;
+  width: 1.2vw;
+  height: 1.2vw;
 }
 
 // all tasks page

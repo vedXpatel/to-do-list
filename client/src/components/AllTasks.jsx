@@ -36,11 +36,13 @@ function AllTasks() {
                 {
                     tasks.map((task) => {
                         return (
+                            <div className="individualTaskContainer card card--accent">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="flexCheckDefault" value={task.id} onChange={deleteTask} />
                                 <label class="form-check-label" for="flexCheckDefault">
                                     {task.task}
                                 </label>
+                            </div>
                             </div>
                         )
                     })

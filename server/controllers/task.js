@@ -40,7 +40,7 @@ const deleteTask = (req,res) => {
         if(err){
             res.status(501).json({success:false,error:err.message});
         }else{
-            res.state(201).json({success:true,message:"Task deleted successfully"});
+            res.status(201).json({success:true,message:"Task deleted successfully"});
         }
     })
 }
