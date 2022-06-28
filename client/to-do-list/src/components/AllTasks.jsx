@@ -2,10 +2,18 @@ import React from 'react';
 import "../styles/task.scss";
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import {useNavigate} from 'react-router-dom';
 
 function AllTasks() {
+    const navigate = useNavigate();
 
     const [tasks, setTasks] = useState([]);
+
+    const fetchData = () => { 
+        axios.get("http://localhost:3000/tasks/")
+            .then((response) => setTasks(response.data.tasks))
+            .catch((err) => console.log(err));
+    }
 
     useEffect(() => {
         axios.get("http://localhost:3000/tasks/")
@@ -16,7 +24,7 @@ function AllTasks() {
     const deleteTask = (e) => {
         const id = e.target.value;
         axios.post(`http://localhost:3000/deleteTask/${id}`, {})
-            .then((response) => console.log(response.data))
+            .then((response) => {console.log(response.data); fetchData()})
             .catch((err) => console.log(err));
     }
 
