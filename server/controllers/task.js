@@ -19,13 +19,18 @@ const addTask = (req,res) => {
     }
 }
 
-const fetchTask = (req,res) => {
-    Task.find({},function(err,tasks){
-        var taskMap = {};
-        tasks.forEach(function(task){
-            taskMap[task._id] = task;
-        });
-        res.json(taskMap);
+const fetchTask = async (req,res) => {
+    let tasks;
+    try {
+        tasks = await Task.find();
+    } catch (err) {
+        console.log(err.message)
+        next();
+    }
+    res.json({
+        tasks: tasks.map(task => task.toObject({
+            getters: true
+        }))
     })
 }
 
