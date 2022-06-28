@@ -29,4 +29,15 @@ const fetchTask = (req,res) => {
     })
 }
 
-module.exports = {addTask,fetchTask};
+const deleteTask = (req,res) => {
+    const {id} = req.params;
+    Task.findByIdAndDelete(id,function(err){
+        if(err){
+            res.status(501).json({success:false,error:err.message});
+        }else{
+            res.state(201).json({success:true,message:"Task deleted successfully"});
+        }
+    })
+}
+
+module.exports = {addTask,fetchTask,deleteTask};
