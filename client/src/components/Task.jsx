@@ -18,6 +18,8 @@ function Task() {
       .then((res) => { console.log(res); setShow(true); })
       .catch((err) => { console.log(err); setShowError(true); })
   }
+
+
   return (
     <>
       <a href="/" style={{color:"black",position:"relative",top:"7vh",left:"10vw"}}>
@@ -37,8 +39,7 @@ function Task() {
               <Alert variant="success" onClose={() => setShow(false)} dismissible>
                 Task Added Successfully
               </Alert>
-        }
-        {
+        }{
           showError && 
           <Alert variant="danger" onClose={() => setShowError(false)} dismissible>
               Task Not Added. We will resolve the error in few minutes.
