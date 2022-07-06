@@ -193,7 +193,11 @@ body{
 
 .taskContainer label{
   font-size: 3vh;
-  color: #411f29;
+  font-family: 'Poppins';
+  font-size: 23px;
+  font-weight: bold;
+  position: relative;
+  top: 0.5vh;
 }
 
 .individualTaskContainer{

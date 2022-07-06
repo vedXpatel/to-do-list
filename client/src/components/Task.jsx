@@ -14,7 +14,7 @@ function Task() {
 
   const submitTask = () => {
     const newTask = { "task": task };
-    axios.post('http://localhost:3000/tasks/', newTask)
+    axios.post('http://localhost:3333/tasks/', newTask)
       .then((res) => { console.log(res); setShow(true); })
       .catch((err) => { console.log(err); setShowError(true); })
   }
