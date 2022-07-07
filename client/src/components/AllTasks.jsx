@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useEffect, useState,useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {MdDeleteForever} from 'react-icons/md';
+import Navbar from './Navbar';
 
 function AllTasks() {
     const navigate = useNavigate();
@@ -36,6 +37,7 @@ function AllTasks() {
 
     return (
         <>
+                <Navbar/>
             <div className="taskContainer">
                 {
                     tasks.map((task) => {
