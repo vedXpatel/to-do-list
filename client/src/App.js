@@ -1,20 +1,15 @@
 import React from 'react';
 import {BrowserRouter as Router,Routes,Route} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Task from './components/Task';
-import AllTasks from './components/AllTasks.jsx';
-
+import Navbar from './components/Navbar';
 
 function App() {
   return(
     <Router>
       <Routes>
-        <Route path="/" element={<AllTasks/>} />
-        <Route path="/addtask" element={<Task/>} />
+        <Route path="/" element={<Navbar/>} />
       </Routes>
     </Router>
-
-    
   )
 }
 

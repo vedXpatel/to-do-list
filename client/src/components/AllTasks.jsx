@@ -37,7 +37,6 @@ function AllTasks() {
 
     return (
         <>
-                <Navbar/>
             <div className="taskContainer">
                 {
                     tasks.map((task) => {
