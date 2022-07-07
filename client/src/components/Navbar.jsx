@@ -11,9 +11,10 @@ function Navbar() {
     const navigation = async(index) => {
         ul(index);
         if(index==0){
-            setActive("alltask")
+            clearInterval();
+            setTimeout(() => {setActive("alltask")},200);
         }else if (index==1){
-            setActive("task");
+            setTimeout(()=>{setActive("task")},200);
         }
     }
 
@@ -32,10 +33,10 @@ function Navbar() {
             <div className="underline" style={{background:"#FFD0A2"}}></div>
             <a href="#" onClick={()=>{navigation(0)}} id="1" style={{color:"#874356"}}>All Tasks</a>
             <a href="#" onClick={()=>{navigation(1)}} id="2" style={{color:"#874356"}}>New Task</a>
-            <a href="#" onClick={()=>{navigation(2)}} id="3" style={{color:"#874356"}}>Home</a>
+            {/* <a href="#" onClick={()=>{navigation(2)}} id="3" style={{color:"#874356"}}>Home</a>
             <a href="#" onClick={()=>{navigation(3)}} id="4" style={{color:"#874356"}}>Home</a>
             <a href="#" onClick={()=>{navigation(4)}} id="5" style={{color:"#874356"}}>Home</a>
-            <a href="#" onClick={()=>{navigation(5)}} id="6" style={{color:"#874356"}}>Home</a>
+            <a href="#" onClick={()=>{navigation(5)}} id="6" style={{color:"#874356"}}>Home</a> */}
         </nav>
         {
             active==="alltask" && <AllTasks/>

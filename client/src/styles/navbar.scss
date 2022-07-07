@@ -9,6 +9,8 @@ nav {
 	background: none;
 	padding: var(--underline-height) 0;
 	margin: 2em 0;
+    width: 60vw;
+    left: 37vw;
 }
 
 .underline {
@@ -17,7 +19,7 @@ nav {
 	z-index: 0;
 	bottom: 0;
 	left: 0;
-	height: var(--underline-height);
+	height: calc(var(--underline-height) / 1.75);
 	width: 20%;
 	background: black;
 	pointer-events: none;
@@ -66,7 +68,7 @@ nav.full {
 	color: white;
 	
 	.underline {
-		height: 100%;
+		height: calc(var(--underline-height) / 2);
 		background: gold;
 	}
 }
