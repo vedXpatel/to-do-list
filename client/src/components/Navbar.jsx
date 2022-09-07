@@ -33,6 +33,7 @@ function Navbar() {
             <div className="underline" style={{background:"#FFD0A2"}}></div>
             <a href="#" onClick={()=>{navigation(0)}} id="1" style={{color:"#874356"}}>All Tasks</a>
             <a href="#" onClick={()=>{navigation(1)}} id="2" style={{color:"#874356"}}>New Task</a>
+            <a href="#" onClick={()=>{navigation(2)}} id="2" style={{color:"#874356"}}>Settings</a>
             {/* <a href="#" onClick={()=>{navigation(2)}} id="3" style={{color:"#874356"}}>Home</a>
             <a href="#" onClick={()=>{navigation(3)}} id="4" style={{color:"#874356"}}>Home</a>
             <a href="#" onClick={()=>{navigation(4)}} id="5" style={{color:"#874356"}}>Home</a>
