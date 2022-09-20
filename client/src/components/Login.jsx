@@ -23,12 +23,13 @@ function Login() {
           <label class="input">
             <input class="input__field" value={email} type="text" placeholder=" " onChange={handleEmailChange}/>
           </label>
+          <br /><br />
           <h2>Password</h2>
           <label class="input">
             <input class="input__field" value={password} type="password" placeholder=" " onChange={handlePasswordChange}/>
           </label>
-          <div class="button-group">
-            <button className="sendButton" >Add Task</button>
+          <div class="button-group login-button-container">
+            <button className="login-button" >Log In</button>
           </div>
         </div>
     </>

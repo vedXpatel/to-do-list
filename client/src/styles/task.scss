@@ -310,3 +310,24 @@ body{
   }
 }
 // all tasks page
+
+
+// login
+.login-button{
+  color: currentColor;
+  padding: var(--size-bezel) calc(var(--size-bezel) * 2);
+  background: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: 900;
+  font-family: "Poppins";
+  width: 10vw;
+  height: 5vh;
+}
+
+.login-button-container{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+// login
